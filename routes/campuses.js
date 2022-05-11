@@ -26,13 +26,14 @@ router.get('/:id', ash(async(req, res) => {
 }));
 
 /* DELETE CAMPUS */
-router.delete('/:id', ash(async(req, res) => {
+router.delete('/:id', ash(async(req, res,next) => {
   await Campus.destroy({
     where: {
       id: req.params.id
     }
-  });
-  res.status(200).json("Deleted a campus!");
+  })  
+  .then(() => res.status(200).json("Deleted a campus!"))
+  .catch(err => next(err));
 }));
 
 /* ADD NEW CAMPUS */
