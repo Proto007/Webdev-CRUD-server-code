@@ -18,8 +18,13 @@ const Campus = db.define("campus", {
     allowNull: false
   },
 
-  description: {
+  imageUrl: {
     type: Sequelize.STRING,
+    defaultValue: "https://www.hunter.cuny.edu/admissions/repository/images/classic-hunter-nyc-cabs.jpg"
+  },
+
+  description: {
+    type: Sequelize.STRING(10000)
   }
 });
 
