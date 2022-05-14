@@ -1,7 +1,7 @@
 # server-starter-code
 
 ***Members:***\
-Sadab Hafiz: Proto007\
+Sadab Hafiz: Proto007
 
 This repository is the server (back-end) starter code for Final Project (CRUD Application).
 
