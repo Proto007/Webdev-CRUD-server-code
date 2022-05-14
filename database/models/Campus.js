@@ -20,7 +20,7 @@ const Campus = db.define("campus", {
 
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: "https://www.hunter.cuny.edu/admissions/repository/images/classic-hunter-nyc-cabs.jpg"
+    defaultValue: "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/853250/college-building-clipart-md.png"
   },
 
   description: {
